@@ -109,7 +109,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                   ),
                                   SizedBox(
                                     width: double.infinity,
-                                    height: 450,
+                                    height: 300,
                                     child: Image.network(
                                       characters[index].image.isEmpty ||
                                               characters[index].image == ""
@@ -146,7 +146,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                         children: [
                           Container(
                             width: double.infinity,
-                            height: 500,
+                            height: 350,
                             decoration: BoxDecoration(
                                 color: Colors.black,
                                 border: Border.all(
@@ -155,12 +155,10 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                 borderRadius: const BorderRadius.all(
                                     Radius.circular(25))),
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                                      const EdgeInsets.fromLTRB(15, 15, 15, 15),
                                   child: Text(
                                     "Hechicero #${index + 1}",
                                     style: const TextStyle(
@@ -172,7 +170,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                                      const EdgeInsets.fromLTRB(15, 15, 15, 15),
                                   child: Text(
                                     "Nombre: ${characters[index].name}",
                                     style: const TextStyle(
@@ -184,7 +182,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                                      const EdgeInsets.fromLTRB(15, 15, 15, 15),
                                   child: Text(
                                     "Genero: ${characters[index].gender == "Male" ? "Masculino" : "Femenino"}",
                                     style: const TextStyle(
@@ -196,7 +194,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                                      const EdgeInsets.fromLTRB(15, 15, 15, 15),
                                   child: Text(
                                     "Casa: ${characters[index].house}",
                                     style: const TextStyle(
@@ -208,7 +206,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                                      const EdgeInsets.fromLTRB(15, 15, 15, 15),
                                   child: Text(
                                     "Actor: ${characters[index].actor}",
                                     style: const TextStyle(
@@ -220,7 +218,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                                      const EdgeInsets.fromLTRB(15, 15, 15, 15),
                                   child: Text(
                                     "Estado: ${characters[index].alive == true ? "Vivo" : "Muerto"}",
                                     style: const TextStyle(
