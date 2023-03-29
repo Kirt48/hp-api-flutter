@@ -83,8 +83,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                       width: double.infinity,
                       height: double.infinity,
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 5, horizontal: 30),
+                        padding: const EdgeInsets.all(8),
                         child: Column(
                           children: [
                             Container(
@@ -98,7 +97,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
                               child: Column(
                                 children: [
                                   const Padding(
-                                    padding: EdgeInsets.only(top: 10),
+                                    padding: EdgeInsets.all(8),
                                     child: Text(
                                         "Doble clic para abir informacion detallada",
                                         style: TextStyle(
@@ -108,18 +107,18 @@ class _CharactersScreenState extends State<CharactersScreen> {
                                             fontWeight: FontWeight.bold)),
                                   ),
                                   SizedBox(
-                                    width: double.infinity,
-                                    height: 300,
+                                    width: 200,
+                                    height: 250,
                                     child: Image.network(
                                       characters[index].image.isEmpty ||
                                               characters[index].image == ""
                                           ? 'https://t3.ftcdn.net/jpg/04/62/93/66/360_F_462936689_BpEEcxfgMuYPfTaIAOC1tCDurmsno7Sp.jpg'
                                           : characters[index].image,
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                                    padding: const EdgeInsets.all(8),
                                     child: Text(
                                       "#${index + 1} ${characters[index].name}",
                                       style: const TextStyle(
